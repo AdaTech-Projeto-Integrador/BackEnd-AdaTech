@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
@@ -27,14 +28,15 @@ public class UsuarioModel {
 	private String nome;
 	
 	@NotBlank
+	@Email(message="O campo de e-mail deve seguir o padrão: texto@email.com")
 	@Size(min = 1, max = 100)
 	private String email;
 	
 	@NotBlank
-	@Size(min = 6, max = 20)
+	@Size(min = 6, max = 20, message = "A senha deve ter entre 6 e 20 caracteres.")
 	private String senha;
 	
-	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<PostagemModel> postagem;
 
