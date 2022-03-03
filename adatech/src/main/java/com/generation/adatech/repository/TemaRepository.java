@@ -1,4 +1,3 @@
-
 package com.generation.adatech.repository;
 
 import java.util.List;

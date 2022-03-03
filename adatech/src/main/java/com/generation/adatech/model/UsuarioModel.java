@@ -15,23 +15,27 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "tb_tema")
-public class TemaModel  {
-	
+@Table (name = "tb_usuario")
+public class UsuarioModel {
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private long id;
 	
 	@NotBlank
-	@Size(min= 3, max= 100)
-	private String titulo;
+	@Size(min = 1, max = 100)
+	private String nome;
 	
 	@NotBlank
-	@Size(min= 3, max= 400)
-	private String descricao;
+	@Size(min = 1, max = 100)
+	private String email;
 	
-	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("tema")
+	@NotBlank
+	@Size(min = 6, max = 20)
+	private String senha;
+	
+	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("usuario")
 	private List<PostagemModel> postagem;
 
 	public long getId() {
@@ -42,20 +46,28 @@ public class TemaModel  {
 		this.id = id;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public String getDescricao() {
-		return descricao;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 	public List<PostagemModel> getPostagem() {
@@ -65,5 +77,5 @@ public class TemaModel  {
 	public void setPostagem(List<PostagemModel> postagem) {
 		this.postagem = postagem;
 	}
-
+	
 }
