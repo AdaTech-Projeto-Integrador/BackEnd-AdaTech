@@ -33,7 +33,7 @@ public class UsuarioModel {
 	private String email;
 	
 	@NotBlank
-	@Size(min = 6, max = 20, message = "A senha deve ter entre 6 e 20 caracteres.")
+	@Size(min = 6, message = "A senha deve ter no mínimo 6 caracteres.")
 	private String senha;
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
