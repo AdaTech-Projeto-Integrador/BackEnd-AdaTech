@@ -37,9 +37,6 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests() // Sessão para autorização do usuário
 			.antMatchers("/usuarios/logar").permitAll() // Permite com que todes tenham acesso ao login
 			.antMatchers("/usuarios/cadastrar").permitAll() // Permite com que todes tenham acesso ao cadastro
-			.antMatchers("/usuarios/atualizar").permitAll() // Permite com que todes tenham acesso à página de atualizar
-			/*.antMatchers("/usuarios/todes").permitAll() // Permite com que todes tenham acesso à lista de usuários
-			.antMatchers("/usuarios/{id}").permitAll() // Permite a todo mundo a busca por Id*/
 			.antMatchers(HttpMethod.OPTIONS).permitAll() // Indicar quais opções estão disponíveis
 			.anyRequest().authenticated() // Camada que envia uma cadeia de caracteres em Base64 que contenham usuário e senha
 			.and().httpBasic()
