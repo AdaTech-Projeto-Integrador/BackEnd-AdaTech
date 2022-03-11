@@ -15,6 +15,8 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @Entity
 @Table (name = "tb_usuario")
 public class UsuarioModel {
@@ -22,13 +24,14 @@ public class UsuarioModel {
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	@NotBlank
 	@Size(min = 1, max = 100)
 	private String nome;
 	
 	@NotBlank
-	@Email(message="O campo de e-mail deve seguir o padrão: texto@email.com")
+	@Schema(example = "email@email.com.br")
+	@Email(message="O campo de e-mail deve seguir o padrão!")
 	@Size(min = 1, max = 100)
 	private String email;
 	
