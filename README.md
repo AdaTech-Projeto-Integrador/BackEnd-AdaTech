@@ -1,8 +1,5 @@
 ## <p align="center"> `<> Olá, Bem Vindo ao Projeto Ada Tech </>` </p> 
 
-<p align="center">Uma rede social feita para mulheres da área da programação poder se ajudar ...</p> 
-
-
 <h4 align="center">
 
 <h2 id="Sobre">🔎 Sobre o Projeto: </h2>
