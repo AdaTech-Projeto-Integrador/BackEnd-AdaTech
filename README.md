@@ -1,5 +1,7 @@
+<img src="https://www.grounds.jp/wp-content/uploads/2020/01/listing.png" min-width="400px" max-width="460px" width="400px" align="right" alt="Computador iuriCode">
+
 ## <p align="center"> `<> Olá, Bem Vindo ao Projeto Ada Tech </>` </p> 
- <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador iuriCode">
+ 
 <h4 align="center">
 
 <h2 id="Sobre">🔎 Sobre o Projeto: </h2>
@@ -14,6 +16,8 @@ Criamos Rede Social desenvolvida como projeto final do Bootcamp de Pessoal Desen
 - Criação do projeto Maven usando o Spring Boot
 - Desenvolvimento das camadas de entidade,repository,controller,service,security e test do projeto
   
+  <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador iuriCode">
+ 
   <h2 id="linguagens">Softwares & Ferramentas utilizadas nesse projeto 📚</h2>
 
   - [x] JAVA
@@ -27,17 +31,6 @@ Criamos Rede Social desenvolvida como projeto final do Bootcamp de Pessoal Desen
   - [x] Heroku
   - [x] Git
   - [x] SCRUM
-
-  <h2 id="habilidades">Habilidades Adquiridas 📝</h2>
-
-  - Lógica de Programação, Programação Orientada à Objetos em JAVA - POO;
-  - Criação de uma API REST;
-  - Responsividade (CSS)
-  - Utilização de Bootstrap
-  - Banco de Dados MySQL, criação de DER
-  - Lógica MVC
-  - Utilização de metodologias ágeis.
-  - Orientação ao Futuro, Persistencia, Proatividade, Mentalidade de Crescimento, Responsabilidade Pessoal, Atenção aos Detalhes, Trabalho em Equipe, Comunicação.
 
 # Equipe 
 | [<img src="https://avatars.githubusercontent.com/u/98328426?v=4" width=115><br><sub>Carlos Kelvin</sub>](https://github.com/carloskelvinn13) |  [<img src="https://avatars.githubusercontent.com/u/89699551?v=4" width=115><br><sub>Fábio Ferreira</sub>](https://github.com/fabiosfjr) |  [<img src="https://avatars.githubusercontent.com/u/97956789?v=4" width=115><br><sub>Guilherme Petro</sub>](https://github.com/guilherme-petro) |   [<img src="https://avatars.githubusercontent.com/u/92352134?v=4" width=115><br><sub>Igor Luan</sub>](https://github.com/igorluan95) |  [<img src="https://avatars.githubusercontent.com/u/98171057?v=4" width=115><br><sub>Layane Pereira</sub>](https://github.com/LayannePereira) | [<img src="https://avatars.githubusercontent.com/u/88059905?v=4" width=115><br><sub>Michelle Madeira</sub>](https://github.com/michellemadeira1) | |  [<img src="https://avatars.githubusercontent.com/u/97990821?v=4" width=115><br><sub>Nadyne Barbieri</sub>](https://github.com/NadyneBarbieri) 
