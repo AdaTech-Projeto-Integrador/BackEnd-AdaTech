@@ -39,5 +39,5 @@ Criamos Rede Social desenvolvida como projeto final do Bootcamp de Pessoal Desen
 
 
 <h4 align="center"> 
-    :construction:  Primeiro Projeto Java  :construction:
+    :construction:  Projeto em andamento  :construction:
 </h4>
