@@ -1,4 +1,4 @@
-<img src="https://www.grounds.jp/wp-content/uploads/2020/01/listing.png" min-width="400px" max-width="460px" width="400px" align="right" alt="Computador iuriCode">
+<img src="https://media.discordapp.net/attachments/941393120183062589/960576681050005525/4c6107f5-7048-4015-a0ba-e436ed17e601.jpeg?width=468&height=468" min-width="400px" max-width="460px" width="400px" align="right" alt="Computador iuriCode">
 
 ## <p align="center"> `<> Olá, Bem Vindo ao Projeto Ada Tech </>` </p> 
  
