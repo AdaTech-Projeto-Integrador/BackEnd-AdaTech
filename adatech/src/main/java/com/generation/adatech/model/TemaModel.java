@@ -22,9 +22,6 @@ public class TemaModel  {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotBlank
-	@Size(min= 3, max= 100)
-	private String titulo;
 	
 	@NotBlank
 	@Size(min= 3, max= 400)
@@ -40,14 +37,6 @@ public class TemaModel  {
 
 	public void setId(long id) {
 		this.id = id;
-	}
-
-	public String getTitulo() {
-		return titulo;
-	}
-
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
 	}
 
 	public String getDescricao() {

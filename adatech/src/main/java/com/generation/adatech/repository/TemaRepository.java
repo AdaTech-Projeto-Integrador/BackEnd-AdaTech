@@ -9,6 +9,6 @@ import com.generation.adatech.model.TemaModel;
 
 @Repository
 public interface TemaRepository extends JpaRepository<TemaModel, Long>{
-	public List<TemaModel> findAllByTituloContainingIgnoreCase(String titulo);
+	public List<TemaModel> findAllByDescricaoContainingIgnoreCase(String descricao);
 
 }

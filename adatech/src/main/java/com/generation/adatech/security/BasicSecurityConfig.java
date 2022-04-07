@@ -33,17 +33,21 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 	@Override
-	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests() // Sessão para autorização do usuário
-			.antMatchers("/usuarios/logar").permitAll() // Permite com que todes tenham acesso ao login
-			.antMatchers("/usuarios/cadastrar").permitAll() // Permite com que todes tenham acesso ao cadastro
-			.antMatchers(HttpMethod.OPTIONS).permitAll() // Indicar quais opções estão disponíveis
-			.anyRequest().authenticated() // Camada que envia uma cadeia de caracteres em Base64 que contenham usuário e senha
-			.and().httpBasic()
-			.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) // Filtro de segurança
-			.and().cors() // Informa o navegador para permitir a execução do domínio, com algumas permissões que foram selecionadas
-			.and().csrf().disable(); // Desabilitando o CSRF, porque ainda não estamos fazendo teste no navegador 
-	}
+    protected void configure(HttpSecurity http) throws Exception{
+        http.authorizeHttpRequests()
+        .antMatchers("/**").permitAll()
+        .antMatchers("/usuarios/logar").permitAll()
+        .antMatchers("/usuarios/cadastrar").permitAll()
+        .antMatchers(HttpMethod.POST ,"/postagens").permitAll()
+        .antMatchers(HttpMethod.POST ,"/tema").permitAll()
+        .antMatchers(HttpMethod.GET ,"/postagens").permitAll()
+        .antMatchers(HttpMethod.GET ,"/tema").permitAll()
+        .anyRequest().authenticated()
+        .and().httpBasic()
+        .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+        .and().cors()
+        .and().csrf().disable();
+    }
 	
 	
 }
