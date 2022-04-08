@@ -23,7 +23,7 @@ public class UsuarioModel {
 
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 
 	@NotBlank
 	@Size(min = 1, max = 100)
@@ -47,11 +47,11 @@ public class UsuarioModel {
 	@JsonIgnoreProperties("usuario")
 	private List<PostagemModel> postagem;
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

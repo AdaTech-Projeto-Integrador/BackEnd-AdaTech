@@ -69,7 +69,7 @@ public class UsuarioController {
 
 	
 	@DeleteMapping("/{id}")
-	public void deletePostagem(@PathVariable long id) {
+	public void deletePostagem(@PathVariable Long id) {
 		usuarioRepository.deleteById(id);
 	}
 	
